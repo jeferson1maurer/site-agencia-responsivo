@@ -1,0 +1,107 @@
+@media screen and (max-width: 900px){
+    header .desktop-menu, header .btn-contact {
+       display: none; 
+    }
+
+    header .btn-menu-mob{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 878px){
+    /* responsivo da hero */
+    .hero-site .txt-hero h1 {
+    font-size: 2.6em;
+    line-height: 45px;
+    }
+
+    .hero-site .txt-hero p {
+        font-size: 14px;
+    }
+
+    .hero-site .txt-hero p span{
+        display: inline;
+    }
+
+    .hero-site button {
+        font-size: 18px;
+    }
+
+/* responsivo das vantagens */
+    .advantages .itens-container {
+        flex-direction: column;
+    }
+
+    .advantages .itens-container .img-itens img {
+        max-width: 100%;
+    }
+
+    .advantages .itens-container .txt-itens p {
+        margin-bottom: 20px;
+    }
+
+    .advantages .itens-container .itens-1 {
+        order: 1;
+    }
+
+    .advantages .itens-container .itens- {
+        order: 0;
+    }
+
+    /* Estilo botoes de contato responsivo */
+    .txt-contact, .icons-contact{
+        display: block;
+        width: 100%;
+    }
+
+    .contact .txt-contact h3 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .contact .icons-contact button {
+        width: 100%;
+    }
+
+    .contact .txt-contact p {
+        margin-bottom: 20px;
+    }
+
+    /* Estilo da seção hotéis */
+    .hotels h3 {
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+    .hotels p {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    /* Estilo da informações */
+    .txt-doubts, .instructions{
+        display: block;
+        width: 100%;
+    }
+
+    .doubts .txt-doubts {
+        position: static;
+    }
+
+    .doubts .txt-doubts h3 {
+    font-size: 3em;
+    line-height: 50px;
+    }
+
+    .instructions .instru-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Estilo do rodapé */
+    footer .middle-footer a {
+        margin: 15px 0;
+        display: block;
+    }
+    footer .bottom-fotter p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,493 @@
+/* Resetar o documento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #e3e3e3;
+}
+
+/* Largura maxima do projeto/centralizando div */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Configuração do botão */
+header .btn-contact button, .hero-site button, .hotels button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Efeito botão*/
+header .btn-contact button:hover, .hero-site button:hover, .hotels button:hover {
+    background-color: #fff; 
+    color: #000;
+}
+
+/* Estilo do header */
+
+/* 100% largura da tela/ espaçamento interno */
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 5;
+}
+
+/* Alinhar/ espaço entre eles/ alinhar ao centro */
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tamanho do logo */
+header .logo  img{
+    max-width: 40px;
+}
+
+/* Estilo do menu dinamico */
+header .logo  img.logo-black{
+display: none;
+}
+
+header.rolar {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000062;
+}
+
+header.rolar .desktop-menu nav ul li a {
+    color: #000;
+}
+
+header.rolar .btn-contact button {
+    border: 1px solid #000;
+    color: #000;
+}
+
+header.rolar .btn-contact button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+header.rolar .logo .logo-white {
+    display: none;
+}
+
+header.rolar .logo .logo-black {
+    display: block;
+}
+
+/* ----------------------- */
+
+header .desktop-menu nav ul {
+    list-style-type: none;
+}
+
+header .desktop-menu nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .desktop-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+ .desktop-menu nav a:hover {
+    transform: scale(1.10);
+ }
+
+header .btn-contact button{
+    width: 140px;
+    height: 50px;
+}
+
+
+/* estilo do botao do meu mobile */
+header .btn-menu-mob{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+header .btn-menu-mob div {
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .2s;
+}
+
+header .btn-menu-mob .line-menu-mob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menu-mob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background-color: #000;
+}
+
+header .btn-menu-mob .line-menu-mob-1.activo1{
+    transform: rotate(45deg) translate(31%);
+    background-color: #fff;
+}
+
+header .btn-menu-mob .line-menu-mob-2.activo2{
+    transform: rotate(-45deg) translate(31%);
+    width: 30px;
+    background-color: #fff;
+}
+
+/* Estilo menu mobile*/
+header .mobile-menu{
+    width: 0;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+header .mobile-menu nav{
+    width: 100%;
+}
+
+header .mobile-menu nav ul {
+    list-style-type: none;
+}
+
+header .mobile-menu nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+    transition: .5s;
+}
+
+header .mobile-menu nav a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+
+header .mobile-menu.open {
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow {
+    overflow: hidden;
+}
+
+/* Estilo do Hero */
+section.hero-site {
+    height: 98vh;
+    width: 100%;
+    background-image: url(../img/background-inicio-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Div */
+.hero-site .interface {
+    display: flex; 
+    align-items: center;
+    height: 100%; 
+}
+
+/* texto h1 */
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+/* Texto span h1 */
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+}
+/* Texto paragrafo */
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/* texto span paragrafo */
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+/* Botão */
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Estilo das vantagens */
+section.advantages {
+    padding: 80px 0;
+}
+
+.advantages .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.advantages .itens-container .img-itens img {
+    max-width: 420px;
+}
+
+.advantages .itens-container .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span {
+    font-weight: 300;
+}
+
+/* Estilo dos botões de contato */
+section.contact {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contact, .icons-contact{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contact .txt-contact h3 {
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact .txt-contact h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.contact .icons-contact a {
+    text-decoration: none;
+}
+
+.contact .icons-contact button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact .icons-contact button i {
+    font-size: 22px;
+}
+
+.contact .icons-contact button:hover {
+    background-color: #000;
+}
+
+.contact .icons-contact button:hover i, .contact .icons-contact button:hover p {
+    color: #fff;
+}
+
+/* Estilo da seção hotéis */
+section.hotels {
+   height: 600px;
+   background-image: url(../img/hotel-bg.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   position: relative;
+   color: #fff;
+   text-align: center;
+}
+
+.hotels > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000d8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hotels > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.hotels h3 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.hotels h3 span {
+    display: block;
+    font-weight: 600;
+}
+
+.hotels p {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hotels button {
+    width: 220px;
+    height: 60px;
+}
+
+/* Estilo da informações */
+section.doubts {
+    padding: 80px 0;
+}
+
+.txt-doubts, .instructions{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.doubts .txt-doubts {
+    position: sticky;
+    top: 50%;
+    padding-bottom: 40px;
+}
+
+.doubts .txt-doubts h3 {
+font-size: 4em;
+line-height: 60px;
+font-weight: 300;
+}
+
+.doubts .txt-doubts h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.instructions .instru-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.instructions .instru-box img {
+    max-width: 100px;
+}
+
+.instructions .instru-box h4 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.instructions .instru-box h4 span {
+    font-weight: 300;
+}
+
+.instructions .instru-box p {
+    line-height: 20px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: .5s;
+}
+
+footer .top-footer button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer .middle-footer {
+    margin: 20px 0;
+}
+
+footer .middle-footer a {
+    color: #fff;
+    margin: 0 15px;
+}
+
+footer .bottom-fotter {
+    border-top: 2px solid #fff;
+}
+
+footer .bottom-fotter p {
+    color: #fff;
+    margin-top: 10px;
+}
+
